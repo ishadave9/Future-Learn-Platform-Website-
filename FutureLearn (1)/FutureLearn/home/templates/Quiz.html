@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div>
+  <div class="panel"  >
+    <h1>Quiz</h1>
+    <div class="question" id="ques"></div>
+    <div class="Options" id="opt" style="display:grid; grid-template-columns: repeat(2, 1fr);
+    gap: 20px;  font-size: 20px;text-align: center;"></div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="checkAns()" id="btn" style="margin-top:4rem; margin-left:2.5rem; margin-bottom:5rem;"> SUBMIT</button>
+    <div id="score" style="background-color:blue;"></div>
+    {% comment %} <script src="{% static 'main.js' %}"></script> {% endcomment %}
+  </div>
+</div>
+{% endblock content %}

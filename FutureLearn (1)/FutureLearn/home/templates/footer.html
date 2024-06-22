@@ -1,0 +1,74 @@
+{% load static %}
+<footer class="footer">
+    <div class="container footer_container">
+      <div class="footer_1">
+        <a href="/index/" class="footer_logo"><h4>FutureLearn</h4></a>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicin eveniet dolorum provident aspernatur placeat?</p>
+      </div>
+
+      <div class="footer_2">
+        <h4>PermaLinks</h4>
+        <ul class = "permalinks">
+          <li><a href="/index/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/courses/">Courses</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_3">
+        <h4>Privacy</h4>
+        <ul class="Privacy">
+          <li><a href="Privacy Policy">Privacy Policy</a></li>
+          <li><a href="Terms and Conditions">Terms and Conditions</a></li>
+          <li><a href=">Refund Policy">Refund Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_4">
+        <h4>Contact Us</h4>
+        <div>
+          <p>+91-9756843210</p>
+          <p>FutureLearn@yahoo.com</p>
+        </div>
+        <ul class="footer_socials">
+          <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="footer_copyright">
+        <small>Copyright &copy; FutureLearner</small>
+      </div>
+
+    </div>
+  </footer>
+                                          
+                                          <!-- end of footer ======================================== =====-->
+                                         
+                                          
+      <script src="{% static 'main.js' %}"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+      <script>
+        // swiper slide
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView:2,
+        spaceBetween:30,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable:true,
+        },
+        // window width is >=600px
+        breakpoints:{
+          600:{
+            slidesPerView:2
+          }
+        }
+});
+      </script>
+</body>
+</html>

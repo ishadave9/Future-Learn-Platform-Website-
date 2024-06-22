@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="contact">
+      <div class="container contact_container">
+        <aside class="contact_aside">
+            <div class="aside_image">
+                {% comment %} <img src="images/images/contact.svg"> {% endcomment %}
+                <img src="{% static 'images/images/contact.svg' %}">
+            </div>
+      <h2>Contact Us</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <ul class="contact_details">
+        <li>
+            <i class="fa-solid fa-phone-volume"></i>
+            <h5>+34509876234</h5>
+        </li>
+        <li>
+            <i class="fa-regular fa-envelope"></i>
+            <h5>+34509876234</h5>
+        </li>
+        <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <h5>Accra, Ghana</h5>
+        </li>
+      </ul>
+
+       <ul class="contact_socials">
+         <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+         <li><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+         <li><a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+         <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+       </ul>
+       </aside>
+
+       <form action="https://formspree.io/f/mleqvnla"  method="POST" class="contact-form">
+        <div class="form_name">
+            <input type="text" name="First Name" placeholder="First Name" required>
+            <input type="text" name="First Name" placeholder="First Name" required>
+        </div>
+        <input type="email" name="Email Address" placeholder="Your Email Address" required>
+        <textarea name="Message" rows="7" placeholder="Your Email Address" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+       </form>
+
+      </div>
+     </section>
+
+     <!-- end -->
+     {% endblock content %}

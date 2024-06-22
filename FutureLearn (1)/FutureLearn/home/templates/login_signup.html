@@ -1,0 +1,140 @@
+{% load static %}
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'login-form.css' %}" />
+  
+  <title>Form</title>
+</head>
+<body>
+  <div class="login-wrap">
+    <div class="login-html">
+      <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+      <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+      <div class="login-form">
+        <div class="sign-in-htm">
+          <form method="post" action="{% url 'login' %}">
+            {% csrf_token %}
+            <div class="group">
+              <label for="user" class="label">Username</label>
+              <input id="user" type="text" class="input">
+            </div>
+            <div class="group">
+              <label for="pass" class="label">Password</label>
+              <input id="pass" type="password" class="input" data-type="password">
+            </div>
+            <div class="group">
+              <input id="check" type="checkbox" class="check" checked>
+              <label for="check"><span class="icon"></span> Keep me Signed in</label>
+            </div>
+            <div class="group">
+              <input type="submit" class="button" value="Sign In">
+            </div>
+          </form>
+            <div class="hr"></div>
+            <div class="foot-lnk">
+              <a href="#forgot">Forgot Password?</a>
+            </div>
+        </div>
+        <div class="sign-up-htm">
+          <form method="post" action="{% url 'register' %}">
+            {% csrf_token %}
+            <div class="group">
+              <label for="user" class="label">Username</label>
+              <input id="user" type="text" class="input">
+            </div>
+            <div class="group">
+              <label for="pass" class="label">Password</label>
+              <input id="pass" type="password" class="input" data-type="password">
+            </div>
+            <div class="group">
+              <label for="pass" class="label">Repeat Password</label>
+              <input id="pass" type="password" class="input" data-type="password">
+            </div>
+            <div class="group">
+              <label for="pass" class="label">Email Address</label>
+              <input id="pass" type="text" class="input">
+            </div>
+            <div class="group">
+              <input type="submit" class="button" value="Sign Up">
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+ {% endcomment %}
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <link rel="stylesheet" href="{% static 'login-form.css' %}" />
+     <link rel="stylesheet" href="{% static 'signup.css' %}" />
+  <title>Form</title>
+</head>
+<body>
+  <div class="login-wrap">
+    <div class="login-html">
+      <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+      <label for="tab-1" class="tab">Sign In</label>
+      <input id="tab-2" type="radio" name="tab" class="sign-up">
+      <label for="tab-2" class="tab">Sign Up</label>
+      <div class="login-form">
+        <div class="sign-in-htm">
+          <form method="post" action="{% url 'login' %}">
+            {% csrf_token %}
+            <div class="group">
+              <label for="login-user" class="label">Username</label>
+              <input id="login-user" name="username" type="text" class="input">
+            </div>
+            <div class="group">
+              <label for="login-pass" class="label">Password</label>
+              <input id="login-pass" name="password" type="password" class="input" data-type="password">
+            </div>
+            <div class="group">
+              <input id="login-check" type="checkbox" class="check" checked>
+              <label for="login-check"><span class="icon"></span> Keep me Signed in</label>
+            </div>
+            <div class="group">
+              <input type="submit" class="button" value="Sign In">
+            </div>
+          </form>
+          <div class="hr"></div>
+          <div class="foot-lnk">
+            <a href="#forgot">Forgot Password?</a>
+          </div>
+        </div>
+
+        <div class="sign-up-htm">
+          <form method="post" action="{% url 'register' %}">
+            {% csrf_token %}
+            <div class="group">
+              <label for="register-user" class="label">Username</label>
+              <input id="register-user" name="username" type="text" class="input">
+            </div>
+            <div class="group">
+              <label for="register-pass" class="label">Password</label>
+              <input id="register-pass" name="password" type="password" class="input" data-type="password">
+            </div>
+            <div class="group">
+              <label for="register-pass-repeat" class="label">Repeat Password</label>
+              <input id="register-pass-repeat" name="password_repeat" type="password" class="input" data-type="password">
+            </div>
+            <div class="group">
+              <label for="register-email" class="label">Email Address</label>
+              <input id="register-email" name="email" type="text" class="input">
+            </div>
+            <div class="group">
+              <input type="submit" class="button" value="Sign Up">
+            </div>
+          </form>
+          <div class="hr"></div>
+          <div class="foot-lnk">
+            <label for="tab-1">Already Member?</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

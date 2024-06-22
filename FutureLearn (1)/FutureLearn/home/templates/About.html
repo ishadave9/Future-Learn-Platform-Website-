@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- part 1 -->
+    <section class="about_achievements">
+        <div class="container about_achievements-container">
+            <div class="about_achievements-left">
+                <img src="{% static 'images/about achievements.svg' %}">
+            </div>
+
+            <div class="about_achievements-right">
+                <h1>Achievements</h1>
+                <p>Education websites have revolutionized the way people learn by providing accessible, diverse, and
+                    often free resources.
+                    These platforms cater to various educational needs, offering courses ranging from academic subjects
+                    to professional
+                    skills development. They have democratized learning, breaking down geographical barriers and
+                    allowing individuals
+                    worldwide to access high-quality education from the comfort of their own homes. Furthermore,
+                    education websites often
+                    incorporate interactive elements, such as quizzes and forums, fostering engagement and collaboration
+                    among learners.
+                    Through these achievements, education websites have become invaluable tools for lifelong learning
+                    and personal growth.</p>
+
+                <div class="achievements_cards">
+                    <article class="achievement_card">
+                        <span class="achievement-icon"><i class="fa-solid fa-video"
+                                style="color:rgb(156, 255, 156); padding-bottom:1.5rem"></i></span>
+                        <h3>480+</h3>
+                        <p>Courses</p>
+                    </article>
+
+                    <article class="achievement_card">
+                        <span class="achievement-icon"><i class="fa-solid fa-users"
+                                style="color:rgb(255, 179, 250); padding-bottom:1.5rem"></i></i></span>
+                        <h3>80,000+</h3>
+                        <p>Students</p>
+                    </article>
+
+                    <article class="achievement_card">
+                        <span class="achievement-icon"><i class="fa-solid fa-award"
+                                style="color:rgb(255, 131, 96); padding-bottom:1.5rem"></i></span>
+                        <h3>35</h3>
+                        <p>Awards</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- part 2 -->
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div class="container team_container">
+
+         <article class="team_member">
+            <div class="team_member-image">
+                <img src="{% static 'images/tm1.jpg' %}">
+            </div>
+            <div class="team_member-info">
+                <h4>Shatta Wale</h4>
+                <p>Manager</p>
+            </div>
+         </article>
+
+         <article class="team_member">
+            <div class="team_member-image">
+                <img src="{% static 'images/tm2.jpg' %}">
+            </div>
+            <div class="team_member-info">
+                <h4>Shatta Wale</h4>
+                <p>Senior Team Developer</p>
+            </div>
+         </article>
+
+         <article class="team_member">
+            <div class="team_member-image">
+                <img src="{% static 'images/tm3.jpg' %}">
+            </div>
+            <div class="team_member-info">
+                <h4>Shatta Wale</h4>
+                <p>Expert Tutor</p>
+            </div>
+         </article>
+
+         <article class="team_member">
+            <div class="team_member-image">
+                <img src="{% static 'images/tm4.jpg' %}">
+            </div>
+            <div class="team_member-info">
+                <h4>Shatta Wale</h4>
+                <p>Expert Tutor</p>
+            </div>
+         </article>
+
+         <article class="team_member">
+            <div class="team_member-image">
+                <img src="{% static 'images/tm5.jpg' %}">
+            </div>
+            <div class="team_member-info">
+                <h4>Shatta Wale</h4>
+                <p>Product Manager</p>
+            </div>
+         </article>
+         
+         <article class="team_member">
+            <div class="team_member-image">
+                <img src="{% static 'images/tm7.jpg' %}">
+            </div>
+            <div class="team_member-info">
+                <h4>Shatta Wale</h4>
+                <p>Software Engineer</p>
+            </div>
+           
+         </article>
+
+         <article class="team_member">
+            <div class="team_member-image">
+                <img src="{% static 'images/tm8.jpg' %}">
+            </div>
+            <div class="team_member-info">
+                <h4>Shatta Wale</h4>
+                <p>Specialist</p>
+            </div>
+         </article>
+
+         <article class="team_member">
+            <div class="team_member-image">
+                <img src="{% static 'images/tm6.jpg' %}">
+            </div>
+            <div class="team_member-info">
+                <h4>Shatta Wale</h4>
+                <p>Finance Manager</p>
+            </div>
+           
+         </article>
+         
+        </div>
+    </section>
+{% endblock content %}
